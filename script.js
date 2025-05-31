@@ -50,7 +50,7 @@ function submitCredentials(event) {
                         });
                         //console.log(userEmailexists);
                         
-                        if(userName !== userNameExists.username) {
+                        if(userName !== userNameExists) {
                                 alert("Please enter username like,\njohnd\nmor_2314\nkevinryan\ndonero\nderek\ndavid_r\nsnyder\nhopkins\nkate_h\njimmie_k")
                         }
                                 const userCredentials = document.querySelector('.user-credentials');
