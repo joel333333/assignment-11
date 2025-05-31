@@ -21,7 +21,9 @@ function submitCredentials(event) {
                         userEmailError.style.fontSize = "10px";
 
                 }
-         } else {
+         } 
+         
+         else {
                   alert(`Name: ${userName}\nEmail: ${userEmail}`);
                   const apiUrl = 'https://fakestoreapi.com/users';
                  fetch(apiUrl).then(Response => {
@@ -32,7 +34,10 @@ function submitCredentials(event) {
                         return Response.json();
                  })
                  .then(data => {
-                        //console.log(data);
+                        data.forEach(element => {
+                                console.log(element.username);
+                                
+                        });;
 
                         
                         const userNameExists = data.find(user => {
@@ -45,7 +50,9 @@ function submitCredentials(event) {
                         });
                         //console.log(userEmailexists);
                         
-
+                        if(userName !== userNameExists.username) {
+                                alert("Please enter username like,\njohnd\nmor_2314\nkevinryan\ndonero\nderek\ndavid_r\nsnyder\nhopkins\nkate_h\njimmie_k")
+                        }
                                 const userCredentials = document.querySelector('.user-credentials');
                         const userDetail = document.createElement('div');
                         userDetail.classList.add("user-container");
@@ -68,7 +75,7 @@ function submitCredentials(event) {
                         <hr>
                         <p>Phone Number : ${userNameExists.phone}</p>
                         <Button id="ok-button" >OKAY</button>`;
-
+                
                         userCredentials.appendChild(userDetail);
                  });
 }}
