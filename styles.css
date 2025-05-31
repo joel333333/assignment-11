@@ -1,0 +1,95 @@
+body {
+        background-color: rgb(14, 13, 13);
+        color: azure;
+        padding: 0;
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+
+}
+.main-container h1 {
+        color: rgb(53, 53, 235);
+        letter-spacing: 10px;
+}
+.container{
+        border: 0px solid white;
+        padding: 30px;
+        border-radius: 20px;
+        background: #000;
+        box-shadow: 0 0 50px brown;
+        width: auto;
+}
+.form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+}
+
+input[type=text] {
+        background: #141414;
+        border: none;
+        outline: none;
+        padding: 17px;
+        width: 100%;
+        color: blanchedalmond;
+}
+
+input[type=text]:focus {
+        box-shadow: 0 0 5px rgb(216, 30, 45);
+}
+section {
+        margin: 10px 20px 0px 20px;
+        /* display: flex;
+        flex-direction: column; */
+
+}
+button {
+        padding: 10px;
+        width: 100%;
+        background-color: green;
+        cursor: pointer;
+        border: none;
+        color: azure;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.user-credentials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+}
+.user-credentials h1{
+        font-size: 2rem;
+        color: blue;
+        letter-spacing: 3px;
+        font-weight: bolder;
+}
+.user-container{
+        background: rgb(0, 0, 0);
+        padding: 20px;
+        box-shadow: 0 0 40px brown;
+        border-radius: 20px;
+}
+.user-container p {
+        font-size: 1rem;
+        word-spacing: 5px;
+}
+.user-container hr {
+        width: 350px;
+}

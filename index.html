@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fetch Client</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <div class="main-container">
+                <h1>LOGIN</h1>
+                <div class="container">
+
+                        <div class="form" action="">
+                                <section>
+                                        <label for="Name">Name</label>
+                                        <input id="user-name" type="text" placeholder="John doe">
+                                        <p id="user-name-error"></p>
+                                </section>
+
+                                <section>
+                                        <label for="mail">E-mail</label>
+                                        <input id="user-email" type="text" placeholder="johndoe@gmail.com">
+                                        <p id="user-email-error"></p>
+                                </section>
+
+                                <section>
+                                        <button onclick="submitCredentials()">Submit</button>
+                                </section>
+                        </div>
+                </div>
+        </div>
+
+        <div class="user-credentials">
+                <h1>Your details</h1>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
